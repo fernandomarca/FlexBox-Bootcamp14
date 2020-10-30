@@ -1,0 +1,38 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  /* flex-wrap: wrap; faz quebra de linha*/
+  /* align-content: ; temos acesso ao usar o wrap*/
+  align-items: center;
+  /* sempre ao contrario do eixo flex-direction: row; aqui seria alinhar verticalmente*/
+  justify-content: center;
+  flex: 1;
+  /* composto do flex-grow: 1; e flex-shrink: 1; para comportamento de crescimento ou ser expremido*/
+}
+
+.box {
+  width: 500px;
+  height: 60px;
+  background-color: red;
+  margin: 5px;
+}
+
+.red {
+  order: 1;
+}
+
+.green {
+  background: green;
+  order: 2;
+}
+
+.blue {
+  background: blue;
+  order: 0;
+}
